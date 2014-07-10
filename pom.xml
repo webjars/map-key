@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>map-key</artifactId>
-    <version>0.1.5-SNAPSHOT</version>
+    <version>0.1.4-1-SNAPSHOT</version>
     <name>map-key</name>
     <description>WebJar for map-key</description>
     <url>http://webjars.org</url>
@@ -46,6 +46,14 @@
         <extractDir>${project.build.directory}/map-key-${upstreamVersion}</extractDir>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>mout-node-alpeb</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
